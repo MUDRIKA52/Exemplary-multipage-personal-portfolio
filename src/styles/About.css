@@ -1,0 +1,100 @@
+/* About.css */
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #ffffff;
+  animation: fadeIn 1s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-heading {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #00d4ff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: bold; /* Make headings bold */
+  animation: slideIn 1s ease-in-out;
+}
+
+.about-content {
+  text-align: justify; /* Justify alignment for content */
+  max-width: 800px;
+  margin: 0 auto; /* Center the content block */
+}
+
+.about-content p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  color: #e2e8f0;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.about-content p:hover {
+  color: #00d4ff;
+  transform: scale(1.05);
+}
+
+.about-content ul {
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: 0;
+  text-align: justify; /* Justify alignment for lists */
+}
+
+.about-content li {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.about-content li::before {
+  content: "• ";
+  color: #00d4ff;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1f1c2c;
+  background-color: #ffa502;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #ff6348;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
